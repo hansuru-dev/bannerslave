@@ -925,7 +925,7 @@ function updateBanners() {
 
     const line1Html = `<span class="text-style-1">프로토 승부식 ${episode}회차</span>`;
     const line2Html = `<span class="text-style-1">${type} </span><span class="text-style-2">${odds}배</span><span class="text-style-1"> 적중!!</span>`;
-    const nameText  = `${analyst.name} 분석위원`;
+    const nameText  = `${analyst.name} 위원`;
 
     Object.values(banners).forEach(b => {
         b.line1.innerHTML = line1Html;
@@ -1046,7 +1046,7 @@ function updateKingBanners() {
     const week  = kingWeek.value.trim()  || '?';
 
     const line1Text = `${month}월 ${week}주차 적중왕`;
-    const line2Text = `${analyst.name} 분석위원`;
+    const line2Text = `${analyst.name} 위원`;
 
     // SC
     kingBanners.sc.line1.textContent = line1Text;
